@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿///
+/// BulletController.cs 
+/// Wanhao Sun
+/// 101277502
+/// Last modified Oct 24th, 2021
+/// 
+/// Program description: launch the bullet and determine when the bullet need to be destroyed
+/// What I changed: change the direction to verical from horizontal
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,7 +39,7 @@ public class BulletController : MonoBehaviour, IApplyDamage
 
     private void _CheckBounds()
     {
-        if (transform.position.x > verticalBoundary)
+        if (transform.position.x > 11)
         {
             bulletManager.ReturnBullet(gameObject);
         }

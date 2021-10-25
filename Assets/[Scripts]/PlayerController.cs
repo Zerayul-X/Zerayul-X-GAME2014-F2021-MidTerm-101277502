@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿///
+/// PlayerController.cs 
+/// Wanhao Sun
+/// 101277502
+/// Last modified Oct 24th, 2021
+/// 
+/// Program description: player movements and movement limitations
+/// What I changed: change the movement to verical from horizontal
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;

@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿///
+/// EnemyController.cs 
+/// Wanhao Sun
+/// 101277502
+/// Last modified Oct 24th, 2021
+/// 
+/// Program description: enemy movements and movement limitations
+/// What I changed: change the movement to verical from horizontal
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,19 +27,19 @@ public class EnemyController : MonoBehaviour
 
     private void _Move()
     {
-        transform.position += new Vector3(horizontalSpeed * direction * Time.deltaTime, 0.0f, 0.0f);
+        transform.position += new Vector3(0.0f, horizontalSpeed * direction * Time.deltaTime, 0.0f);
     }
 
     private void _CheckBounds()
     {
         // check right boundary
-        if (transform.position.x >= horizontalBoundary)
+        if (transform.position.y >= horizontalBoundary)
         {
             direction = -1.0f;
         }
 
         // check left boundary
-        if (transform.position.x <= -horizontalBoundary)
+        if (transform.position.y <= -horizontalBoundary)
         {
             direction = 1.0f;
         }

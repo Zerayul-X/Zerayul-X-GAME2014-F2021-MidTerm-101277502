@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿///
+/// BulletFactory.cs 
+/// Wanhao Sun
+/// 101277502
+/// Last modified Oct 24th, 2021
+/// 
+/// Program description: basic settings for the bullets
+/// What I changed: N/A
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿///
+/// BulletManager.cs 
+/// Wanhao Sun
+/// 101277502
+/// Last modified Oct 24th, 2021
+/// 
+/// Program description: manage the bullets
+/// What I changed: rotate the bullet 90 degrees when it first created
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -34,6 +44,9 @@ public class BulletManager : MonoBehaviour
         var newBullet = m_bulletPool.Dequeue();
         newBullet.SetActive(true);
         newBullet.transform.position = position;
+        //rotate
+        newBullet.transform.Rotate(Vector3.forward * 90);
+
         return newBullet;
     }
 

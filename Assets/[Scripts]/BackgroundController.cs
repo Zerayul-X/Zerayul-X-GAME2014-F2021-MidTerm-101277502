@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿///
+/// BackgroundController.cs 
+/// Wanhao Sun
+/// 101277502
+/// Last modified Oct 24th, 2021
+/// 
+/// Program description: scrolling the background
+/// What I changed: change the scrolling to verical from horizontal
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
